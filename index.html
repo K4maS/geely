@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geely COOLRAY</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js">
+  </script>
+  <script defer src="./js/index.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+  <!-- --—BEGIN SPRITE -->
+  <svg style="display: none;">
+
+    <symbol id="phone" fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M0 10.375c0 0.938 0.344 1.969 0.781 3.063s1 2.125 1.438 2.906c1.188 2.063 2.719 4.094 4.469 5.781s3.813 3.094 6.125 3.938c1.344 0.531 2.688 1.125 4.188 1.125 0.75 0 1.813-0.281 2.781-0.688 0.938-0.406 1.781-1.031 2.094-1.781 0.125-0.281 0.281-0.656 0.375-1.094 0.094-0.406 0.156-0.813 0.156-1.094 0-0.156 0-0.313-0.031-0.344-0.094-0.188-0.313-0.344-0.563-0.5-0.563-0.281-0.656-0.375-1.5-0.875-0.875-0.5-1.781-1.063-2.563-1.469-0.375-0.219-0.625-0.313-0.719-0.313-0.5 0-1.125 0.688-1.656 1.438-0.563 0.75-1.188 1.438-1.625 1.438-0.219 0-0.438-0.094-0.688-0.25s-0.5-0.281-0.656-0.375c-2.75-1.563-4.594-3.406-6.156-6.125-0.188-0.313-0.625-0.969-0.625-1.313 0-0.406 0.563-0.875 1.125-1.375 0.531-0.469 1.094-1.031 1.094-1.719 0-0.094-0.063-0.375-0.188-0.781-0.281-0.813-0.656-1.75-0.969-2.656-0.156-0.438-0.281-0.75-0.313-0.906-0.063-0.094-0.094-0.219-0.125-0.375s-0.094-0.281-0.125-0.406c-0.094-0.281-0.25-0.5-0.406-0.625-0.156-0.063-0.531-0.156-0.906-0.188-0.375 0-0.813-0.031-1-0.031-0.094 0-0.219 0-0.344 0.031h-0.406c-1 0.438-1.719 1.313-2.25 2.344-0.5 1.031-0.813 2.188-0.813 3.219z">
+      </path>
+    </symbol>
+    <symbol id="baloon" fill="#000000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M10 2.009c-2.762 0-5 2.229-5 4.99 0 4.774 5 11 5 11s5-6.227 5-11c0-2.76-2.238-4.99-5-4.99zm0 7.751a2.7 2.7 0 1 1 0-5.4 2.7 2.7 0 0 1 0 5.4z" />
+    </symbol>
+    <symbol id="arrow" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.013 512.013"
+      style="enable-background:new 0 0 512.013 512.013;" xml:space="preserve">
+      <g>
+        <g>
+          <path
+            d="M507.36,244.726l-160-160l-22.72,22.72l132.8,132.64H0v32h457.44L324.8,404.726l22.56,22.56l160-160 C513.564,261.046,513.564,250.967,507.36,244.726z">
+          </path>
+        </g>
+      </g>
+    </symbol>
+  </svg>
+  <!-- --—END SPRITE -->
+  <!-- --—BEGIN HEADER -->
+  <div class="blackout"></div>
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__logo">
+          <img src="./img/geely-logo.png" alt="geely-logo">
+          <span class="header__stick"></span>
+          <img src="./img/orbis-logo.png" alt="orbis-logo">
+        </div>
+        <div class="header__address-block">
+          <svg class="header__address-icon">
+            <use xlink:href="#baloon"></use>
+          </svg>
+          <a href="https://www.google.com/maps/place/Exeed+Shymkent/@42.3517075,69.5326249,15z/data=!4m15!1m8!3m7!1s0x38a91b3fbbfe2caf:0x31084d05776d897f!2sExeed+Shymkent!8m2!3d42.3517075!4d69.5326249!10e1!16s%2Fg%2F11szzbgd9f!3m5!1s0x38a91b3fbbfe2caf:0x31084d05776d897f!8m2!3d42.3517075!4d69.5326249!16s%2Fg%2F11szzbgd9f?entry=ttu"
+            class="header__address-text">
+            <p class="header__address header__address-name">Geely sumkent</p>
+            <p class="header__address">Тамерланское шоссе 90Б</p>
+          </a>
+        </div>
+        <div class="header__phone">
+
+          <a href="tel:+77780037686">
+            <svg class="header__phone-icon">
+              <use xlink:href="#phone"> </use>
+            </svg>
+            +7(778)003-76-86
+          </a>
+        </div>
+        <div class="header__call-order">
+          <a data-fancybox href="#contact-window" class="header__btn btn  btn-reset">
+            Заказать звонок
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <nav class="header__nav nav">
+          <ul class="nav__left-list nav__list list-reset">
+            <li class="nav__item item">
+              <a href="" class="item__list">Coolray</a>
+            </li>
+            <li class="nav__item item">
+              <a href="" class="item__list">Azkarra</a>
+            </li>
+            <li class="nav__item item">
+              <a href="" class="item__list">Tugella</a>
+            </li>
+            <li class="nav__item item">
+              <a href="" class="item__list">Monjaro</a>
+            </li>
+          </ul>
+          <ul class="nav__right-list nav__list list-reset">
+            <li class="nav__item item">
+              <a href="" class="item__list">Подбор комплектации</a>
+            </li>
+            <li class="nav__item item">
+              <a href="" class="item__list">Трейд-ин</a>
+            </li>
+            <li class="nav__item item">
+              <a href="" class="item__list">Кредит</a>
+            </li>
+            <li class="nav__item item">
+              <a href="" class="item__list">Тест-драйв</a>
+            </li>
+            <li class="nav__item item">
+              <a href="" class="item__list">Контакты</a>
+            </li>
+          </ul>
+
+          <button class="nav__burger burger btn-reset">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
+        </nav>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- --—END HEADER -->
+  <main class="main">
+    <!-- --—BEGIN HERO -->
+    <section class="hero">
+
+      <div class="hero__slider">
+        <div>
+          <h3 class="hero__title">GEELY с выгодой <span class="hero__price">3 000 000</span>
+            <span class="hero__currency">₸</span>
+          </h3>
+          <p class="hero__text">
+            Рассрочка на 1 год — <span class="bold">0%</span>
+          </p>
+          <p class="hero__text">
+            Кредит на 2 года ставка — <span class="bold">10%</span>
+          </p>
+          <p class="hero__text">
+            Кредит на 5 лет ставка — <span class="bold">15%</span>
+          </p>
+        </div>
+        <div>
+          <h3 class="hero__title">Дорогие подарки до 10 000 ₸</h3>
+          <p class="hero__text">
+            Эво-коврик на багажник
+          </p>
+          <p class="hero__text">
+            Пятое колесо с литыми дисками
+          </p>
+          <p class="hero__text">
+            Календарь за 2001 год
+          </p>
+        </div>
+        <div>
+          <h3 class="hero__title">Розыгрыши и конкурсы в день начала акции </h3>
+          <p class="hero__text">
+            Лоторея с главными призом — автомобиль
+          </p>
+          <p class="hero__text">
+            Бесплатный тест-драйв всего модельного ряда
+          </p>
+
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="hero__bottom-title">
+          Успей забронировать
+        </h2>
+        <div class="hero__bottom">
+          <form action="" class="hero__contact-from form">
+            <input type="text" class="form__input" placeholder="Номер телефона">
+            <button class="form__button btn btn-reset">Получить предложение
+              <svg>
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </button>
+            <label class="form__check">
+              <input tabindex="0" class="form__checkbox" type="checkbox" name="agree" id="agree"><span
+                class="form__span"></span>
+              Согласие на
+              <a href="#" class="form__link">
+                обработку
+                персональных данных</a>
+            </label>
+
+          </form>
+          <div class="hero__percent-label">
+            <p class="hero__precent-text">Честная <span class="hero__precent-text-second-line">Рассрочка</span> </p>
+            <div class="hero__percent">
+              <div>0.01<span class="hero__percent-symbol">%</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- --—END HERO -->
+    <!-- --—BEGIN OFFER -->
+    <section class="offer">
+      <div class="container">
+        <div class="offer__left">
+          <img src="./img/offer-bg.png" alt="offer-bg" class="offer__bg-img">
+          <div class="offer__v-slider">
+            <div>
+              <img src="./img/car-front-photo.png" alt="car-front">
+            </div>
+            <div>
+              <img src="./img/car-perspective-photo.png" alt="car-perspective">
+            </div>
+            <div>
+              <img src="./img/car-interier-photo.png" alt="car-interier">
+            </div>
+            <div>
+              <img src="./img/car-front-photo.png" alt="car-front">
+            </div>
+            <div>
+              <img src="./img/car-perspective-photo.png" alt="car-perspective">
+            </div>
+          </div>
+          <div class="offer__left-left">
+            <div class="offer__guarantee-block ">
+              <div class="offer__guarantee-label">
+                <span class="guarantee-years">6</span>
+                <span class="guarantee-years-text">лет <br /> гарантии</span>
+                <img src="./img/shield.png" alt="" class="guarantee-shield">
+              </div>
+              <div class="offer__complect"><a href="#" class="">Подобрать комплектацию <svg>
+                    <use xlink:href="#arrow"></use>
+                  </svg></a>
+              </div>
+            </div>
+            <div class="offer__h-slider">
+              <div>
+                <img src="./img/1-red-car.png" alt="red-car">
+              </div>
+              <div>
+                <img src="./img/2-gray-car.png" alt="gray-car">
+              </div>
+              <div>
+                <img src="./img/3-white-car.png" alt="white-car">
+              </div>
+              <div>
+                <img src="./img/4-black-car.png" alt="black-car">
+              </div>
+              <div>
+                <img src="./img/5-blue-car.png" alt="blue-car">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="offer__right">
+          <h2 class="offer__title">Geely <span class="offer__title-blue">Coolray</span></h2>
+          <div class="offer__benefit">
+            <p class="offer__benefit-text">
+              выгода до <span class="offer__benefit-count">1 800 000</span>
+              <span class="offer__benefit-currency">₸</span>
+            </p>
+          </div>
+          <ul class="offer__list list-reset">
+            <li class="offer__item item">
+              <img src="./img/offer-refresh.png" alt="refresh" class="item__img refresh">
+              <p class="item__text">
+                Выгода по трейд-ин<br />
+                <span class="item__text-mini">
+                  до
+                </span>
+                <span class="item__benefit-count">
+                  900 000
+                </span>
+                <span class="item__benefit-currency">₸</span>
+              </p>
+            </li>
+            <li class="offer__item item">
+              <img src="./img/offer-credit-card.png" alt="credit card" class="item__img card">
+              <p class="item__text">
+                Выгода по кредиту<br />
+                <span class="item__text-mini">
+                  от
+                </span>
+                <span class="item__benefit-count">
+                  600 000
+                </span>
+                <span class="item__benefit-currency">₸</span>
+              </p>
+            </li>
+            <li class="offer__item item">
+              <img src="./img/offer-present.png" alt="present" class="item__img present">
+              <p class="item__text">Пакет доп.оборудования<br />в подарок
+                <span class="item__benefit-count">
+                  300 000
+                </span>
+                <span class="item__benefit-currency">₸</span>
+              </p>
+            </li>
+          </ul>
+          <form action="" class="offer__from form">
+
+            <a data-fancybox href="#contact-window" class="form__button btn white-btn btn-reset">Записаться на
+              тест-дравйв
+              <svg>
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </a>
+            <a data-fancybox href="#contact-window" class="form__button btn light-blue-btn btn-reset">
+              <span>Честная рассрочка <span class="bold">0.01%</span></span>
+              <svg>
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </a>
+            <a data-fancybox href="#contact-window" class="form__button btn blue-btn btn-reset">Узнать цену
+              <svg>
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </a>
+
+          </form>
+        </div>
+        <div class="offer__bg-text">
+          <img src="./img/COOLRAY.png" alt="Coolray">
+        </div>
+      </div>
+    </section>
+    <!-- --—END OFFER -->
+
+    <!-- --—BEGIN WINDOW -->
+    <div class="contact-window" id="contact-window">
+      <h2 class="contact-window__bottom-title">
+        Оставьте свой номер, чтобы наш сотрудник смог с вами связаться
+      </h2>
+      <form action="" class="contact-window__contact-from form">
+        <input type="text" class="form__input" placeholder="Номер телефона">
+        <button class="form__button btn btn-reset">Получить предложение
+          <svg>
+            <use xlink:href="#arrow"></use>
+          </svg>
+        </button>
+        <label class="form__check">
+          <input tabindex="0" class="form__checkbox" type="checkbox" name="agree" id="agree"><span
+            class="form__span"></span>
+          Согласие на
+          <a href="#" class="form__link">
+            обработку
+            персональных данных</a>
+        </label>
+
+      </form>
+    </div>
+    <!-- --—END WINDOW -->
+  </main>
+
+
+</body>
+
+</html>
