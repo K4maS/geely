@@ -338,6 +338,10 @@
 
     }
 
+    .hero .slick-arrow {
+        height: 40px;
+    }
+
     .hero__percent-label {
         display: none;
         height: 60px;
@@ -447,6 +451,18 @@
 
     .hero__currency {
         font-size: 14px;
+    }
+
+    .hero .slick-arrow {
+        height: 40px;
+    }
+
+    .hero .slick-next {
+        right: 10px;
+    }
+
+    .hero .slick-prev {
+        left: -6px;
     }
 
     .offer__left-left {
