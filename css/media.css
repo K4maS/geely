@@ -410,6 +410,7 @@
 
 }
 
+
 @media (max-width: 500px) {
     .container {
         max-width: 320px;
@@ -432,10 +433,32 @@
         gap: 13px;
     }
 
+    .hero__title {
+        font-size: 14px;
+    }
+
+    .hero__text {
+        font-size: 12px;
+    }
+
+    .hero__price {
+        font-size: 20px;
+    }
+
+    .hero__currency {
+        font-size: 14px;
+    }
+
     .offer__left-left {
         width: 75%;
 
     }
+
+    .offer__bg-img {
+        right: 0;
+        width: 320px;
+    }
+
     .offer__guarantee-block {
         transform: scale(0.7);
     }
