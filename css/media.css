@@ -385,6 +385,7 @@
         padding-left: 0;
         align-items: center;
     }
+
     .offer__list {
         width: 320px;
     }
@@ -408,9 +409,34 @@
 
 
 }
-/* 
+
 @media (max-width: 500px) {
     .container {
         max-width: 320px;
     }
-} */
+
+    .header__logo {
+        width: 90px;
+    }
+
+    .header__btn {
+        text-align: center;
+    }
+
+    .header__phone a {
+        letter-spacing: -1px;
+        font-size: 12px;
+    }
+
+    .nav__list {
+        gap: 13px;
+    }
+
+    .offer__left-left {
+        width: 75%;
+
+    }
+    .offer__guarantee-block {
+        transform: scale(0.7);
+    }
+}
